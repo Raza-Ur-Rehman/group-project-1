@@ -26,7 +26,7 @@ article {
 .gallary {
   width: 90vw;
   display: grid;
-  grid: auto / auto auto auto;
+  grid-template-columns: 200px 1fr;
   grid-gap: 16px;
   margin: 64px auto;
   max-width: 1120px;
@@ -49,8 +49,8 @@ article {
 }
 .company-btn {
   display: block;
-  margin: 0.25em 0;
-  padding: 0.25rem;
+  margin: 4px 0;
+  padding: 4px;
   text-transform: capitalize;
   background: transparent;
   border-color: transparent;
@@ -58,23 +58,25 @@ article {
   color: #64748b;
   cursor: pointer;
   transition: 0.3s ease-in-out all;
-  font-size: 0.85rem;
+  font-size: 14px;
 }
 .products-container {
-    display: grid;
-    grid: auto / auto auto auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
-
+  display: grid;
+  /* grid: auto / auto auto auto; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
 }
 .product {
-
+  
 }
 .poduct img {
-  width: 100%;
   height: 160px;
-  display: block;
+  width: 100%;
   object-fit: cover;
+  display: block;
   border-radius: 4px;
-  height: 15rem;
+}
+.product-footer {
+    padding: 12px 0;
+    text-align: center;
 }
